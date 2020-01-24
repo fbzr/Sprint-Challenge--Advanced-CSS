@@ -7,15 +7,15 @@
 }
 
 // Button
-.custom-btn(@bg-color, @font-color, @width: 150px, @heigth: 50px) {
+.custom-btn(@bg-color, @font-color, @width: 150px, @height: 50px, @font-weight: normal) {
     background-color: @bg-color;
     color: @font-color;
     width: @width;
-    height: @heigth;
+    height: @height;
     border: @bg-color 1px solid;
     border-radius: 7px;
     font-size: 2.5rem;
-    font-weight: bold;
+    font-weight: @font-weight;
     cursor: pointer;
     .display-flex();
 
