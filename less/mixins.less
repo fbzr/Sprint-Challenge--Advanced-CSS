@@ -18,4 +18,12 @@
     font-weight: bold;
     cursor: pointer;
     .display-flex();
+
+    transition-property: background-color, color;
+    transition-duration: 250ms;
+
+    &:hover {
+        background-color: @font-color;
+        color: @bg-color;
+    }
 }
