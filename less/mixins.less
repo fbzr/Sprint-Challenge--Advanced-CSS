@@ -6,6 +6,17 @@
     align-items: @align;
 }
 
+// Hover effect
+.hover-effect(@bg-color, @font-color) {
+    transition-property: background-color, color;
+    transition-duration: 250ms;
+
+    &:hover {
+        background-color: @bg-color;
+        color: @font-color;
+    }
+}
+
 // Button
 .custom-btn(@bg-color, @font-color, @width: 150px, @height: 50px, @font-weight: normal) {
     background-color: @bg-color;
@@ -19,11 +30,6 @@
     cursor: pointer;
     .display-flex();
 
-    transition-property: background-color, color;
-    transition-duration: 250ms;
-
-    &:hover {
-        background-color: @font-color;
-        color: @bg-color;
-    }
+    .hover-effect(@font-color, @bg-color);
 }
+
