@@ -20,10 +20,14 @@ nav {
         }
 
         .nav-links-container {
-            width: 30%;
-            min-width: 280px;
+            width: 460px;
+            min-width: 335px;
             max-width: 100%;
             .display-flex(@justify: space-between);
+
+            @media @tablet {
+                width: 70%
+            }
 
             @media @phone {
                 width: 80%;

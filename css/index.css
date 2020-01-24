@@ -192,13 +192,18 @@ nav .nav-container .nav-title-container {
   }
 }
 nav .nav-container .nav-links-container {
-  width: 30%;
-  min-width: 280px;
+  width: 460px;
+  min-width: 335px;
   max-width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+@media (max-width: 800px) {
+  nav .nav-container .nav-links-container {
+    width: 70%;
+  }
 }
 @media (max-width: 500px) {
   nav .nav-container .nav-links-container {
