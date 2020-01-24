@@ -188,7 +188,7 @@ nav .nav-container .nav-title-container {
 }
 @media (max-width: 500px) {
   nav .nav-container .nav-title-container {
-    margin: 4% 0;
+    margin: 2% 0;
   }
 }
 nav .nav-container .nav-links-container {
@@ -223,6 +223,11 @@ nav .nav-container .nav-links-container a {
   height: 40px;
   transition-property: background-color, color;
   transition-duration: 250ms;
+}
+@media (max-width: 500px) {
+  nav .nav-container .nav-links-container a {
+    height: 35px;
+  }
 }
 nav .nav-container .nav-links-container a:hover {
   background-color: #454A59;

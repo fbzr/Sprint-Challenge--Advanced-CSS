@@ -15,7 +15,7 @@ nav {
             margin: 1% 0;
 
             @media @phone {
-                margin: 4% 0;
+                margin: 2% 0;
             }
         }
 
@@ -44,6 +44,10 @@ nav {
 
                 transition-property: background-color, color;
                 transition-duration: 250ms;
+
+                @media @phone {
+                    height: 35px;
+                }
 
                 &:hover {
                     background-color: @nav-font;
