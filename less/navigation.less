@@ -1,8 +1,13 @@
 // Navigation code here
 nav {
-    background-color: @nav-bg;
+    background-color: fadeout(@nav-bg, 10%);
+    position: fixed; //create a fixed nav
+    .display-flex();
+    width: 100%;
+    height: @nav-height;
     
     .nav-container {
+        width: 100%;
         .display-flex(column);
 
         .nav-title-container {
@@ -14,7 +19,7 @@ nav {
         }
 
         .nav-links-container {
-            margin-bottom: 1%;
+            margin: 1% 0;
             width: 30%;
             min-width: 280px;
             max-width: 100%;
