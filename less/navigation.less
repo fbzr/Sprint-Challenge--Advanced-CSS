@@ -1,1 +1,24 @@
 // Navigation code here
+nav {
+    background-color: @nav-bg;
+    
+    .nav-container {
+        .display-flex(column);
+
+        .nav-title-container {
+            margin: 1% 0;
+        }
+
+        .nav-links-container {
+            margin-bottom: 1%;
+            width: 30%;
+            .display-flex(@justify: space-between);
+
+            a {
+                color: @nav-font;
+                text-decoration: none;
+                font-weight: bold;
+            }
+        }
+    }
+}
