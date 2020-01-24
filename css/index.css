@@ -177,6 +177,11 @@ nav .nav-container {
 nav .nav-container .nav-title-container {
   margin: 1% 0;
 }
+@media (max-width: 500px) {
+  nav .nav-container .nav-title-container {
+    margin: 4% 0;
+  }
+}
 nav .nav-container .nav-links-container {
   margin-bottom: 1%;
   width: 30%;
@@ -186,6 +191,12 @@ nav .nav-container .nav-links-container {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+@media (max-width: 500px) {
+  nav .nav-container .nav-links-container {
+    width: 80%;
+    margin-bottom: 3%;
+  }
 }
 nav .nav-container .nav-links-container a {
   color: #454A59;

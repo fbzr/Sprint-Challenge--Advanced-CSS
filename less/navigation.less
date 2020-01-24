@@ -7,6 +7,10 @@ nav {
 
         .nav-title-container {
             margin: 1% 0;
+
+            @media @phone {
+                margin: 4% 0;
+            }
         }
 
         .nav-links-container {
@@ -15,6 +19,11 @@ nav {
             min-width: 280px;
             max-width: 100%;
             .display-flex(@justify: space-between);
+
+            @media @phone {
+                width: 80%;
+                margin-bottom: 3%;
+            }
 
             a {
                 color: @nav-font;
