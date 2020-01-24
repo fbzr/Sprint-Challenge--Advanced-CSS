@@ -295,7 +295,54 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
-.home .walk .walk-text .btn {
+.home .walk .walk-img {
+  width: 46%;
+  margin-left: 4%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    width: 100%;
+    margin: 0;
+  }
+}
+.home .walk .walk-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.home .subscription {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4% 0;
+  border-top: solid 1px #dee2e6;
+}
+.home .subscription form {
+  width: 50%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .home .subscription form {
+    width: 90%;
+  }
+}
+.home .subscription form .form-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  padding-bottom: 6%;
+}
+.home .subscription form .form-group label {
+  padding-bottom: 4px;
+}
+.home .subscription form .btn {
   background-color: #22283A;
   color: white;
   width: 150px;
@@ -311,17 +358,18 @@ footer {
   align-items: center;
   transition-property: background-color, color;
   transition-duration: 250ms;
+  align-self: flex-end;
 }
-.home .walk .walk-text .btn:hover {
+.home .subscription form .btn:hover {
   background-color: white;
   color: #22283A;
 }
 @media (max-width: 500px) {
-  .home .walk .walk-text .btn {
+  .home .subscription form .btn {
     background-color: #22283A;
     color: white;
     width: 100%;
-    height: 70px;
+    height: 60px;
     border: #22283A 1px solid;
     border-radius: 7px;
     font-size: 2.5rem;
@@ -334,23 +382,8 @@ footer {
     transition-property: background-color, color;
     transition-duration: 250ms;
   }
-  .home .walk .walk-text .btn:hover {
+  .home .subscription form .btn:hover {
     background-color: white;
     color: #22283A;
   }
-}
-.home .walk .walk-img {
-  width: 46%;
-  margin-left: 4%;
-}
-@media (max-width: 500px) {
-  .home .walk .walk-img {
-    width: 100%;
-    margin: 0;
-  }
-}
-.home .walk .walk-img img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
 }

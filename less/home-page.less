@@ -79,14 +79,6 @@
       p {
         margin-bottom: 26px;
       }
-
-      .btn {
-        .custom-btn(@btn-bg-color, white, @font-weight: bold);
-
-        @media @phone {
-          .custom-btn(@btn-bg-color, white, @width: 100%, @height: 70px, @font-weight: normal);
-        }
-      }
     }
 
     .walk-img {
@@ -102,6 +94,41 @@
         width: 100%;
         height: auto;
         border-radius: 10px;
+      }
+    }
+  }
+
+  .subscription {
+    .display-flex(@direction: column);
+    padding: 4% 0;
+    border-top: solid 1px @main-border-color;
+
+    form {
+      width: 50%;
+      max-width: 100%;
+      .display-flex(@direction: column);
+
+      @media @phone {
+        width: 90%;
+      }
+
+      .form-group {
+        width: 100%;
+        .display-flex(@direction: column, @align: stretch); 
+        padding-bottom: 6%;
+
+        label {
+          padding-bottom: 4px;
+        }
+      }
+
+      .btn {
+        .custom-btn(@btn-bg-color, white, @font-weight: bold);
+        align-self: flex-end;
+
+        @media @phone {
+          .custom-btn(@btn-bg-color, white, @width: 100%, @height: 60px, @font-weight: normal);
+        }
       }
     }
   }
