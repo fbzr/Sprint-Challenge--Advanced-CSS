@@ -1,1 +1,35 @@
 // Mixins Here
+.display-flex(@direction: row, @justify: center, @align: center) {
+    display: flex;
+    flex-direction: @direction;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+// Hover effect
+.hover-effect(@bg-color, @font-color) {
+    transition-property: background-color, color;
+    transition-duration: 250ms;
+
+    &:hover {
+        background-color: @bg-color;
+        color: @font-color;
+    }
+}
+
+// Button
+.custom-btn(@bg-color, @font-color, @width: 150px, @height: 50px, @font-weight: normal) {
+    background-color: @bg-color;
+    color: @font-color;
+    width: @width;
+    height: @height;
+    border: @bg-color 1px solid;
+    border-radius: 7px;
+    font-size: 2.5rem;
+    font-weight: @font-weight;
+    cursor: pointer;
+    .display-flex();
+
+    .hover-effect(@font-color, @bg-color);
+}
+
